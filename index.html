@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="AI 如何变革视觉表达与产品体验——精修演示版。" />
+    <meta name="theme-color" content="#050506" />
+    <title>AI 如何变革视觉表达与产品体验｜精修版 V3</title>
+    <link rel="stylesheet" href="./styles.css?v=20260902-4" />
+    <link rel="stylesheet" href="./complete.css" />
+  <link rel="stylesheet" href="./refine-v3.css?v=20260902-42" />
+    <link rel="stylesheet" href="./mobile.css?v=20260816-1" />
+  </head>
+  <body>
+    <a class="skip-link" href="#controls">跳到翻页控制</a>
+    <main id="app" aria-label="AI 如何变革视觉表达与产品体验精修分享">
+      <div id="stage">
+        <section class="slide cover-slide active v3-cover" data-title="封面" aria-labelledby="cover-title">
+          <div class="v3-cover-heading" id="cover-title">
+            <div class="v3-title-line line-one"><em>AI</em><span>如何变革</span></div>
+            <div class="v3-title-line line-two"><span>视觉表达</span><i>&amp;</i><span>产品体验</span></div>
+          </div>
+          <div class="cover-materials" aria-label="五张视觉概念卡片">
+            <button class="material m-a cover-season-card" type="button" aria-label="节气海报概念卡片"></button>
+            <button class="material m-b cover-shader-card shader-branch-card" type="button" aria-label="黑底发光树枝着色器卡片"><canvas class="cover-shader" data-shader-variant="1" aria-hidden="true"></canvas></button>
+            <button class="cover-image-wrap material-center cover-shader-card shader-black-card" type="button" aria-label="黑色金属流体着色器卡片"><canvas class="cover-shader" data-shader-variant="0" aria-hidden="true"></canvas></button>
+            <button class="material m-c solid-blue-card cover-play-card" type="button" aria-label="视频播放按钮概念卡片"><span class="fake-play" aria-hidden="true"></span></button>
+            <button class="material m-d dot-matrix-card" type="button" aria-label="动态点状阵列卡片"><span class="cover-dot-grid" aria-hidden="true"></span></button>
+          </div>
+        </section>
+
+        <section class="slide agenda-slide v3-agenda" data-title="目录" aria-label="分享目录">
+          <div class="v3-agenda-cluster">
+            <div class="index-item i1"><b>01</b><span>抽象到具象</span><small>生图流程拆解</small></div>
+            <div class="index-item i2"><b>02</b><span>工作流到 SKILL</span><small>从视觉侧探究 AI 如何提效</small></div>
+            <div class="index-item i3"><b>03</b><span>统一碎片化流程</span><small>重构 AI 视频产出</small></div>
+            <div class="index-item i4"><b>04</b><span>AI 落地变革</span><small>AI 动效提效与协作</small></div>
+            <svg class="index-line" viewBox="0 0 1240 490" aria-hidden="true"><path d="M180 120 C335 62 410 325 545 350 S790 75 910 115 S1045 360 1120 390"></path><circle cx="180" cy="120" r="7"></circle><circle cx="545" cy="350" r="7"></circle><circle cx="910" cy="115" r="7"></circle><circle cx="1120" cy="390" r="7"></circle></svg>
+          </div>
+        </section>
+
+        <section class="slide section-slide v3-section-one" data-title="抽象到具象" aria-labelledby="chapter-one-title">
+          <div class="chapter-dot-art visual-dot-art" aria-hidden="true"></div><div class="section-no">01</div>
+          <h2 class="section-word" id="chapter-one-title"><span class="title-accent">抽象到具象</span></h2>
+          <p class="v3-section-sub">生图流程拆解</p>
+        </section>
+
+        <section class="slide content-slide v3-tools" data-title="工具变化" aria-labelledby="tool-evolution-title">
+          <div class="big-label" id="tool-evolution-title">工具在变，<span class="title-accent">工作方式</span>也在变</div>
+          <div class="v3-era-track"><article><h3>单独生图</h3><p>从单点视觉生成开始。</p></article><i>→</i><article><h3>视频生成</h3><p>静态画面扩展到时间和镜头。</p></article><i>→</i><article class="accent-panel"><h3>复杂任务</h3><p>Codex、Claude 开始处理代码、工具和完整任务。</p></article></div>
+          <div class="v3-shift-center"><span>以前：自己完成一个设计任务</span><i>→</i><strong>现在：先拆解任务，再调用不同 AI</strong></div>
+        </section>
+
+        <section class="slide v3-orchestrator" data-title="AI 统筹者" aria-labelledby="orchestrator-title">
+          <div class="big-label" id="orchestrator-title">从设计师到 <span class="title-accent">AI 统筹者</span></div>
+          <div class="orchestrator-layout"><div class="role-transition"><article class="role-side role-before"><h3>设计师</h3><p>视觉设计</p></article></div><div class="role-arrow">→</div>
+            <div class="tool-system"><div class="system-hub">AI<br />统筹者</div>
+              <div class="tool-node tn1"><span class="tool-brand"><img src="./assets/brands/codex-old.png" alt="Codex 图标" /></span><b>Codex / Claude</b><span>代码、工具搭建与实现</span></div>
+              <div class="tool-node tn2"><span class="tool-brand"><img src="./assets/brands/gpt.ico" alt="GPT 图标" /></span><b>GPT Image</b><span>专业生图与视觉探索</span></div>
+              <div class="tool-node tn3"><span class="tool-brand"><img src="./assets/brands/doubao-official.png" alt="豆包图标" /></span><b>豆包</b><span>思考、整理与快速尝试</span></div>
+              <div class="tool-node tn4"><span class="tool-brand"><img src="./assets/brands/jimeng.svg" alt="即梦图标" /></span><b>即梦</b><span>快速生图与视频</span></div>
+              <div class="tool-node tn5"><span class="tool-brand"><img src="./assets/brands/kimi.ico" alt="Kimi 图标" /></span><b>Kimi</b><span>辅助研究与长内容</span></div>
+              <svg viewBox="0 0 760 620"><path d="M380 305 L380 92 M380 305 L570 205 M380 305 L505 470 M380 305 L255 470 M380 305 L190 205"></path></svg>
+            </div>
+          </div>
+          <div class="orchestrator-notes"><p><b>先拆任务</b>明确目标和环节</p><p><b>再做选择</b>什么时候调用什么能力</p><strong>让不同 AI 围绕同一个目标协作。</strong></div>
+        </section>
+
+        <section class="slide content-slide" data-title="Prompt 本质" aria-labelledby="prompt-essence-title">
+          <div class="big-label" id="prompt-essence-title"><span class="title-accent">Prompt</span>：把抽象感觉变成具体画面</div>
+          <div class="abstract-concrete"><div class="abstract-cloud"><span>高级一点</span><span>更有氛围</span><span>再年轻一些</span></div><div class="conversion-core"><small>继续追问</small><strong>继续拆解</strong><div class="v3-decompose-symbol" role="img" aria-label="将一个整体拆分成四个可控制部分"><i></i><i></i><i></i><i></i><b></b></div></div><div class="concrete-stack"><p><b>色调</b>是什么颜色关系？</p><p><b>光线</b>什么样的光更有质感？</p><p><b>镜头</b>什么视角更有冲击力？</p><p><b>比例</b>主体在画面中占多少？</p></div></div>
+          <p class="slide-takeaway">即使一句话或一张参考图已经能生成接近的结果，Prompt 仍然决定过程是否可控。</p>
+        </section>
+
+        <section class="slide v3-prompt-slide" data-title="画面拆解" aria-labelledby="prompt-title">
+          <div class="big-label" id="prompt-title">一张图可以拆成<span class="title-accent">哪些部分</span></div>
+          <div class="prompt-map v3-prompt-map"><svg class="v3-prompt-lines" viewBox="0 0 1400 570" aria-hidden="true"><polygon></polygon><polygon></polygon><polygon></polygon><polygon></polygon><polygon></polygon><polygon></polygon></svg><div class="prompt-center" role="img" aria-label="由画板、太阳和山形组成的图片图形"><div class="v3-picture-symbol" aria-hidden="true"><i class="pic-back-one"></i><i class="pic-back-two"></i><i class="pic-frame"></i><i class="pic-sun"></i><i class="pic-mountain-one"></i><i class="pic-mountain-two"></i><i class="pic-caption-one"></i><i class="pic-caption-two"></i></div></div><div class="prompt-center-label">拆解画面</div>
+            <div class="prompt-node pn1"><b>主体</b><span>角色、动作、表情、比例</span></div><div class="prompt-node pn2"><b>辅助物体</b><span>补充信息与构图关系</span></div><div class="prompt-node pn3"><b>环境</b><span>前景、中景、背景、景深</span></div><div class="prompt-node pn4"><b>氛围</b><span>天气、色调、光影</span></div><div class="prompt-node pn5"><b>镜头 / 透视</b><span>俯视、仰视、倾斜、鱼眼</span></div><div class="prompt-node pn6"><b>构图 / 文案</b><span>位置、字体、材质</span></div>
+          </div>
+        </section>
+
+        <section class="slide content-slide v3-reference-shortcut" data-title="参考图快捷路径" aria-labelledby="reference-shortcut-title" data-static-copy>
+          <div class="big-label" id="reference-shortcut-title">参考图，是一条<span class="title-accent">快捷路径</span></div>
+          <div class="v3-ref-shortcut-layout">
+            <div class="v3-ref-shortcut-visual" role="img" aria-label="从参考图提取点线面关系，再重组为新的视觉结构">
+              <svg class="v3-ref-glyph" viewBox="0 0 560 520" aria-hidden="true">
+                <g class="v3-ref-glyph-source">
+                  <rect class="glyph-frame" x="40" y="92" width="205" height="300" rx="28"></rect>
+                  <circle class="glyph-accent" cx="104" cy="164" r="31"></circle>
+                  <rect class="glyph-line" x="78" y="229" width="126" height="15" rx="8"></rect>
+                  <rect class="glyph-line glyph-line-short" x="78" y="261" width="78" height="10" rx="5"></rect>
+                  <path class="glyph-plane" d="M78 345 L122 298 L162 331 L203 285 L203 355 L78 355 Z"></path>
+                </g>
+                <path class="v3-ref-transfer-line" d="M264 242 H327"></path>
+                <path class="v3-ref-transfer-head" d="M312 226 L330 242 L312 258"></path>
+                <g class="v3-ref-glyph-output">
+                  <rect class="glyph-frame" x="345" y="126" width="175" height="252" rx="25"></rect>
+                  <rect class="glyph-line" x="382" y="176" width="101" height="14" rx="7"></rect>
+                  <path class="glyph-plane" d="M382 295 L419 257 L454 284 L483 251 L483 319 L382 319 Z"></path>
+                  <circle class="glyph-accent" cx="461" cy="229" r="27"></circle>
+                </g>
+              </svg>
+              <div class="v3-ref-glyph-caption"><span>参考</span><i>→</i><strong>重新组织</strong></div>
+            </div>
+
+            <div class="v3-ref-shortcut-story">
+              <article class="v3-ref-why">
+                <span class="v3-ref-kicker">为什么快捷</span>
+                <p>相比从零写一大段描述，一张合适的参考图可以<span>一次对齐多个视觉维度</span>，更快明确方向。</p>
+              </article>
+              <div class="v3-ref-source-list" aria-label="寻找参考图的三个途径">
+                <div><b>花瓣网</b><span>设计案例、构图与风格</span></div>
+                <div><b>小红书</b><span>当下趋势、真实场景与用户语境</span></div>
+                <div><b>自有素材库</b><span>品牌历史与可复用经验</span></div>
+              </div>
+              <article class="v3-ref-risk">
+                <b>注意雷同风险</b>
+                <div><p>不要围绕一张图整体复刻。</p><span>多看几张 → 分别提取 → 重新组合</span></div>
+              </article>
+            </div>
+          </div>
+          <p class="slide-takeaway">参考图是<span class="gold-accent">沟通捷径</span>，不是复制模板。</p>
+        </section>
+
+        <section class="slide content-slide v3-reference-slide" data-title="参考图怎么用" aria-labelledby="reference-title">
+          <div class="big-label" id="reference-title">参考图不是复制，而是<span class="title-accent">主动拆解</span></div>
+          <figure class="v3-reference-poster v3-reference-glyph" role="img" aria-label="由参考画面、取景框、构图线、色彩样本和元素节点组成的参考图图形组合">
+            <svg viewBox="0 0 360 560" aria-hidden="true">
+              <g class="ref-glyph-back">
+                <rect class="ref-glyph-back-panel" x="92" y="38" width="224" height="358" rx="28" />
+                <circle class="ref-glyph-back-orb" cx="214" cy="154" r="66" />
+                <path class="ref-glyph-back-line" d="M126 272 C176 224 232 326 290 252" />
+                <circle class="ref-glyph-back-dot" cx="270" cy="92" r="8" />
+              </g>
+              <g class="ref-glyph-front">
+                <rect class="ref-glyph-paper" x="28" y="78" width="246" height="370" rx="30" />
+                <rect class="ref-glyph-image" x="49" y="101" width="204" height="274" rx="20" />
+                <circle class="ref-glyph-orb" cx="120" cy="178" r="48" />
+                <path class="ref-glyph-plane" d="M49 286 L132 218 L253 308 L253 375 L49 375 Z" />
+                <path class="ref-glyph-horizon" d="M70 280 C112 242 151 254 188 286 C209 304 229 305 247 294" />
+                <circle class="ref-glyph-point p1" cx="210" cy="148" r="6" />
+                <circle class="ref-glyph-point p2" cx="227" cy="170" r="4" />
+                <circle class="ref-glyph-point p3" cx="199" cy="182" r="3" />
+                <g class="ref-glyph-corners">
+                  <path d="M67 137 V119 H85 M217 119 H235 V137 M67 339 V357 H85 M217 357 H235 V339" />
+                </g>
+                <rect class="ref-glyph-swatch swatch-dark" x="60" y="399" width="46" height="16" rx="8" />
+                <rect class="ref-glyph-swatch swatch-blue" x="116" y="399" width="46" height="16" rx="8" />
+                <rect class="ref-glyph-swatch swatch-light" x="172" y="399" width="70" height="16" rx="8" />
+              </g>
+              <path class="ref-glyph-link" d="M241 382 C270 394 282 414 286 442" />
+              <g class="ref-glyph-token">
+                <rect x="244" y="430" width="86" height="86" rx="22" />
+                <circle cx="287" cy="469" r="18" />
+                <path d="M265 493 H309" />
+              </g>
+            </svg>
+            <div class="ref-glyph-label" aria-hidden="true"><b>REFERENCE</b><span>FRAME · LIGHT · COLOR</span></div>
+          </figure>
+          <div class="v3-reference-questions"><p>我喜欢的是构图，还是色彩？</p><p>光影是什么样的？</p><p>镜头是什么？</p><p>氛围是什么？</p><p>哪些元素是我真正想要的？</p><p>哪些只是参考图本身的内容？</p></div>
+          <div class="v3-reference-result">视觉拆解 <i>→</i> 重新组织 <i>→</i> 更可控的结果</div>
+        </section>
+
+        <section class="slide content-slide v3-visual-skill" data-title="万能视觉 Skill" aria-labelledby="visual-skill-title">
+          <div class="big-label" id="visual-skill-title">万能视觉 <span class="title-accent">Skill</span></div>
+          <a class="v3-skill-shot" href="#" aria-label="万能视觉 Skill 链接占位"><div class="v3-skill-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b>S</b></div><span>VISUAL SKILL</span><strong></strong><em>打开链接 ↗</em></a>
+          <p class="v3-skill-copy"><code>{
+  <span class="code-key">"image_prompt"</span>: "以 json 格式描述这幅图，描述准确复刻原始图像所需的所有方面，包括主体、视角构图、风格、光线、图片比例、有关物品、服装、发型、复杂细节、配饰、摄影器材、环境、身体姿势以及任何其他相关元素的具体信息，确保能够精确地重现原始图像的每一个细节。",
+  <span class="code-key">"output"</span>: "要求输出 json 格式提示词，字数 750 字以内。",
+  <span class="code-key">"video_prompt"</span>: "同时以 json 格式给这幅图定制一个适配的视频提示词。"
+}</code></p><button class="v3-code-copy" id="v3-code-copy" type="button">复制代码</button>
+        </section>
+
+        <section class="slide section-slide v3-skill-section" data-title="工作流到 SKILL" aria-labelledby="chapter-two-title">
+          <div class="chapter-dot-art infinity-dot-art" aria-hidden="true"></div><div class="section-no">02</div><h2 class="section-word" id="chapter-two-title"><span class="title-accent">工作流到 SKILL</span></h2><p class="v3-section-sub">从视觉侧探究 AI 如何提效</p>
+        </section>
+
+        <section class="slide poster-slide v3-poster-slide" data-title="宠物险节气海报" aria-labelledby="poster-title">
+          <div class="archive-layout"><div class="big-label" id="poster-title">宠物险<span class="title-accent">节气海报</span></div><div class="poster-grid coverflow"><figure><img src="./assets/reference/poster-01.jpg" alt="宠物险情人节海报" /><figcaption>情人节</figcaption></figure><figure><img src="./assets/reference/poster-02.jpg" alt="宠物险春分海报" /><figcaption>春分</figcaption></figure><figure><img src="./assets/reference/poster-03.jpg" alt="宠物险清明海报" /><figcaption>清明</figcaption></figure><figure><img src="./assets/reference/poster-04.jpg" alt="宠物险劳动节海报" /><figcaption>劳动节</figcaption></figure><figure><img src="./assets/reference/poster-05.jpg" alt="宠物险立夏海报" /><figcaption>立夏</figcaption></figure><figure><img src="./assets/reference/poster-06.jpg" alt="宠物险端午节海报" /><figcaption>端午节</figcaption></figure><figure><img src="./assets/reference/poster-07.jpg" alt="宠物险父亲节海报" /><figcaption>父亲节</figcaption></figure><figure><img src="./assets/reference/poster-08.jpg" alt="宠物险小暑海报" /><figcaption>小暑</figcaption></figure></div><div class="coverflow-dots" aria-label="海报选择"></div><p class="v3-poster-note">企微推送，从元旦开始到现在，持续产出 30+ 张</p></div>
+        </section>
+
+        <section class="slide content-slide v3-brand-slide" data-title="项目基础" aria-labelledby="brand-foundation-title">
+          <div class="big-label" id="brand-foundation-title">工作流之前，先有<span class="title-accent">品牌基础</span></div>
+          <div class="v3-brand-collage" aria-label="宠物险品牌视觉规范参考图"><img class="v3-brand-full" src="./assets/user/pet-brand-system.png" alt="宠物险品牌视觉规范全景" /></div>
+          <div class="v3-brand-note">品牌视觉规范，为后续 Prompt、工作流和 Skill 提供稳定基础。</div>
+        </section>
+
+        <section class="slide content-slide v3-template-slide" data-title="节气海报 Prompt 模板" aria-labelledby="poster-template-title">
+          <div class="big-label" id="poster-template-title">立夏案例与<span class="title-accent">Prompt 模板</span></div>
+          <figure class="v3-lixia-poster"><img src="./assets/reference/poster-05.jpg" alt="宠物险立夏海报案例" /></figure>
+          <figure class="v3-template-source" data-static-copy>
+            <img src="./assets/user/poster-prompt-template.png" alt="包含 IP 母版、动作、前景背景、氛围、辅助角色、视角、色调和视觉强化词的原始 Prompt 模板" loading="lazy" decoding="async" />
+            <figcaption>原始模板</figcaption>
+          </figure>
+          <div class="v3-template-list"><article><div><h3>小帅茉莉母版、画面参考</h3><p>方便 AI 参照比例、特点以及风格。</p></div></article><article><div><h3>猫狗 IP</h3><p>动作、表情、服装、前后关系。</p></div></article><article><div><h3>前景与背景</h3><p>前景：左上角、右下角、虚化；背景：明确场景内容。</p></div></article><article><div><h3>氛围与辅助角色</h3><p>光、雨、雪、叶子、花瓣、光粒、灰尘、光斑、风；燕子、鸟、蝴蝶、蜜蜂，让视觉重心从 IP 拉到整体节气主题。</p></div></article><article><div><h3>视角、色调与强化词</h3><p>俯视、仰视、侧面、特写、从某处俯视或仰视、大透视；颜色、曝光、暗调、冷暖、夕阳、照在脸上的阳光；有冲击力、艺术大师、动态模糊。</p></div></article><article class="accent-panel"><div><h3>标题文案</h3><p>结合节气文化与品牌亲和感；水、冰、雪、花、草、叶子等材质让标题真正融入画面。</p></div></article></div>
+        </section>
+
+        <section class="slide v3-workflow-slide" data-title="海报工作流" aria-labelledby="workflow-title">
+          <div class="big-label" id="workflow-title">宠物险节气<span class="title-accent">海报工作流</span></div><div class="workflow-dot-field" aria-hidden="true"></div>
+          <div class="v3-workflow-track"><div><b>01</b><span>提醒</span></div><div><b>02</b><span>调研</span></div><div><b>03</b><span>文案</span></div><div><b>04</b><span>视觉创意</span></div><div><b>05</b><span>生图</span></div><div><b>06</b><span>合成</span></div></div>
+          <p class="v3-workflow-top">项目基础：Logo / IP / 字体 / 品牌色 / 品牌调性 / 营销视觉规范</p><p class="slide-takeaway">把可以规范化和自动化的环节连接起来。</p>
+        </section>
+
+        <section class="slide content-slide v3-workflow-role" data-title="工作流的作用" aria-labelledby="workflow-role-title" data-static-copy>
+          <div class="big-label" id="workflow-role-title">工作流的<span class="title-accent">作用</span></div>
+          <p class="v3-workflow-role-intro">让每一次生成，都基于同一套可复用的判断标准。</p>
+          <div class="v3-workflow-role-board">
+            <div class="v3-workflow-role-hub" role="img" aria-label="工作流将统一规则连接到稳定、准确和高效的产出结果">
+              <small>RULES IN</small>
+              <strong>工作流</strong>
+              <div class="v3-role-hub-glyph" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+              <span>统一判断标准</span>
+            </div>
+            <div class="v3-workflow-role-lanes">
+              <article>
+                <span class="v3-role-index">01</span>
+                <div class="v3-role-outcome"><small>品牌信息</small><strong>稳定表达</strong></div>
+                <div class="v3-role-copy"><p>将品牌信息固化为长期可调用的规则，让系列产出始终保持一致识别。</p><span>Logo · IP · 字体 · 品牌色 · 品牌调性</span></div>
+              </article>
+              <article>
+                <span class="v3-role-index">02</span>
+                <div class="v3-role-outcome"><small>节日节气内涵</small><strong>准确表现</strong></div>
+                <div class="v3-role-copy"><p>把节日节气的文化语义与产品调性、业务目标准确结合，不止停留在表面元素。</p><span>节气语义 × 产品调性 × 业务目标</span></div>
+              </article>
+              <article>
+                <span class="v3-role-index">03</span>
+                <div class="v3-role-outcome"><small>产出流程</small><strong>规范提效</strong></div>
+                <div class="v3-role-copy"><p>将重复环节沉淀为标准路径，减少沟通、试错与返工，提高整体产出效率。</p><span>调研 → 文案 → 创意 → 生图 → 合成</span></div>
+              </article>
+            </div>
+          </div>
+          <p class="slide-takeaway"><span class="gold-accent">稳定品牌 · 校准表达 · 规范产出</span>，这就是工作流真正解决的问题。</p>
+        </section>
+
+        <section class="slide content-slide v3-skill-octagon-slide" data-title="从工作流到 Skill" aria-labelledby="workflow-skill-title">
+          <div class="big-label" id="workflow-skill-title">工作流转换成<span class="title-accent">可重复调用的 Skill</span></div>
+          <div class="v3-skill-octagon"><strong>SKILL</strong><div class="v3-skill-wordmark" aria-hidden="true"><i>S</i><i>K</i><i>I</i><i>L</i><i>L</i></div><ul><li>IP 主体规范</li><li>历史海报资源</li><li>创意范围</li><li>禁止项</li><li>历史问题 / 复盘检索</li><li>标题字体规范</li><li>Python 合成</li></ul></div>
+          <p class="slide-takeaway">让已经确定的视觉规则和经验，可以被 AI 重复调用。</p>
+        </section>
+
+        <section class="slide content-slide v3-problem-slide" data-title="创意不可控" aria-labelledby="creative-problem-title">
+          <div class="big-label" id="creative-problem-title">Skill 背后的问题：<span class="title-accent">创意不可控</span></div>
+          <div class="v3-chain-bg v3-chain-one" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="v3-chain-bg v3-chain-two" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="v3-problem-octagon"><strong>创意很难<br />完全规则化</strong></div><div class="v3-problem-cluster"><span>主体选择奇怪</span><span>方向不稳定</span><span>氛围与节日不匹配</span><span>IP 动作与业务关系弱</span><span>画面完整但创意不成立</span></div><div class="v3-problem-bar">品牌规范容易写成规则，但创意是抽象的，需要继续保留人的判断。</div>
+        </section>
+
+        <section class="slide v3-creative-solution" data-title="创意解决方案" aria-labelledby="creative-title">
+          <div class="big-label" id="creative-title">先限定范围，再让 <span class="title-accent">AI 组合</span></div>
+          <svg class="v3-octagon-line" viewBox="0 0 760 620" aria-hidden="true"><g class="v3-octagon-shape"><line x1="380" y1="310" x2="245" y2="40"></line><line x1="380" y1="310" x2="520" y2="40"></line><line x1="380" y1="310" x2="705" y2="210"></line><line x1="380" y1="310" x2="650" y2="470"></line><line x1="380" y1="310" x2="500" y2="580"></line><line x1="380" y1="310" x2="245" y2="560"></line><line x1="380" y1="310" x2="70" y2="410"></line><line x1="380" y1="310" x2="75" y2="175"></line><polygon points="245,40 520,40 705,210 650,470 500,580 245,560 70,410 75,175"></polygon></g></svg>
+          <div class="v3-inside-modules"><span>节气氛围</span><span>色调范围</span><span>IP 动作</span><span>业务关系</span><span>动作范围</span><span>表情与场景</span><strong>创意</strong></div><div class="v3-decision-line">规则控制 <i>×</i> AI 发散 <i>×</i> <b>人工判断</b></div>
+        </section>
+
+        <section class="slide content-slide v3-text-solution" data-title="文字问题" aria-labelledby="text-problem-title">
+          <div class="big-label" id="text-problem-title">第二个问题：<span class="title-accent">文字</span></div>
+          <div class="v3-four-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="v3-text-compare"><div><div class="v3-type-symbol" aria-hidden="true"><i></i><i></i><b>字</b></div><h3>一次完成</h3><p>画面和标题一起生成</p><strong>字体风格知道了<br />但不一定真正融合</strong></div><i>→</i><div><h3>拆开完成</h3><ol><li>先完成视觉画面</li><li>文字单独生成</li><li>Python 最终合成</li></ol><div class="v3-split-benefits"><span><b>字体可控</b><em>字形、材质和风格可单独调整</em></span><span><b>层级可调</b><em>位置、比例与信息层级更清楚</em></span><span><b>复用稳定</b><em>便于修改、合成与后续系列化</em></span></div></div></div>
+          <p class="slide-takeaway"><span class="gold-accent">不要总想一次解决全部问题。</span>图文拆开，文字的表现力和稳定性反而更好。</p>
+        </section>
+
+        <section class="slide content-slide v3-skill-debt-slide" data-title="Skill 的屎山代码" aria-labelledby="skill-debt-title" data-static-copy>
+          <div class="big-label" id="skill-debt-title">Skill 的<span class="title-accent">屎山代码</span></div>
+          <div class="v3-debt-layout">
+            <div class="v3-debt-visual" role="img" aria-label="不断追加纠错命令，使 Skill 文件越来越臃肿">
+              <div class="v3-debt-file">
+                <div class="v3-debt-filebar"><b>SKILL.md</b><span>APPEND MODE</span></div>
+                <div class="v3-debt-revision debt-r1"><b>初始要求</b><span>直接完成目标任务</span></div>
+                <div class="v3-debt-revision debt-r2"><b>纠错 01</b><span>不要加入无关内容</span></div>
+                <div class="v3-debt-revision debt-r3"><b>纠错 02</b><span>不要解释为什么不加入</span></div>
+                <div class="v3-debt-revision debt-r4"><b>纠错 03</b><span>再次确认以上否认规则</span></div>
+                <div class="v3-debt-pile-label"><span>要求</span><i>＋</i><span>否认</span><i>＋</i><span>解释</span><strong>越改越长</strong></div>
+              </div>
+              <div class="v3-debt-analogy"><span>删除错误</span><b>≠</b><span>追加一条“不要……”</span></div>
+            </div>
+
+            <div class="v3-debt-story">
+              <article class="v3-debt-problem">
+                <span class="v3-debt-kicker">问题</span>
+                <p>AI 收到新要求后，有时不会直接修改原规则，而是把整段<span>纠错过程</span>继续写进 Skill。</p>
+              </article>
+              <div class="v3-debt-costs" aria-label="三个直接后果">
+                <article><b>体量</b><span>越来越大</span></article>
+                <article><b>时间</b><span>耗在反复确认</span></article>
+                <article><b>Token</b><span>消耗越来越夸张</span></article>
+              </div>
+              <article class="v3-debt-solution">
+                <span class="v3-debt-kicker">解决办法</span>
+                <div><b>01 · 覆写要求</b><p>调整 Skill 时，让 AI 直接重写原要求，而不是继续增加否认命令。</p></div>
+                <div><b>02 · 主动精简</b><p>删除重复、冲突和解释性内容，只保留最新、明确、可执行的规则。</p></div>
+              </article>
+            </div>
+          </div>
+          <p class="slide-takeaway">维护 Skill，不是记录纠错历史；而是持续维护一份<span class="gold-accent">最新、最短、可执行</span>的说明。</p>
+        </section>
+
+        <section class="slide content-slide v3-demo-slide" data-title="生成案例" aria-labelledby="chushu-title">
+          <div class="big-label" id="chushu-title">生成案例</div><blockquote><span>“用节气海报的 Skill，帮我做一张白露海报，</span><span class="quote-second">要求露水与 IP 结合。”</span></blockquote><div class="v3-demo-steps"><span>人的初始想法</span><i>→</i><span>Skill 调用规则</span><i>→</i><span>AI 继续生成</span></div>
+        </section>
+
+        <section class="slide content-slide v3-other-skills" data-title="其他 Skill 工作" aria-labelledby="other-skill-title">
+          <div class="big-label" id="other-skill-title">其他适合<span class="title-accent">Skill 化</span>的工作</div>
+          <div class="v3-skill-links"><a href="https://moodring-iota.vercel.app/" target="_blank" rel="noreferrer"><div class="v3-mindmap-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>视觉创意前期思维发散</h3><p>快速整理创意方向，抓取对应图片参考，生成一份带图片的思维导图。</p><span>查看 Skill ↗</span></a><a href="#"><div class="v3-marketing-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>营销海报 Skill</h3><p>写入偏营销、可爱的视觉风格和固定宠物品种要求，方便后续合作持续调用。</p><span>查看 Skill ↗</span></a></div>
+        </section>
+
+        <section class="slide section-slide v3-video-section" data-title="统一碎片化流程" aria-labelledby="chapter-three-title">
+          <div class="play-dot-art" aria-hidden="true"></div><div class="section-no">03</div><h2 class="section-word" id="chapter-three-title"><span class="title-accent">统一碎片化流程</span></h2><p class="v3-section-sub">重构 AI 视频产出</p>
+        </section>
+
+        <section class="slide content-slide video-case-slide v3-video-case" data-title="AI 视频案例" aria-labelledby="video-case-title">
+          <video class="case-loop-video" src="./assets/motion/prompt-flow-loop.mp4" muted loop autoplay playsinline aria-hidden="true"></video><div class="workflow-dot-field v3-video-flow-dots" aria-hidden="true"></div><div class="big-label" id="video-case-title">亚宠展发布会 · <span class="title-accent">接近 5 分钟</span></div>
+          <div class="v3-seven-flow"><article><span class="v3-flow-icon icon-script" aria-hidden="true"></span><h3>从大纲到脚本</h3><p>先把完整内容和目标整理清楚。</p></article><article><span class="v3-flow-icon icon-storyboard" aria-hidden="true"></span><h3>详细分镜头脚本</h3><p>AI 处理后，再由人工修改和优化。</p></article><article><span class="v3-flow-icon icon-setting" aria-hidden="true"></span><h3>基础设定</h3><p>人物、宠物、场景和品牌信息。</p></article><article><span class="v3-flow-icon icon-frames" aria-hidden="true"></span><h3>58 张分镜画面</h3><p>AI 生成后，逐张人工检查和优化。</p></article><article><span class="v3-flow-icon icon-video" aria-hidden="true"></span><h3>视频生成</h3><p>根据不同镜头选择合适模型。</p></article><article><span class="v3-flow-icon icon-music" aria-hidden="true"></span><h3>旁白与 BGM</h3><p>声音继续围绕同一个内容目标。</p></article><article><span class="v3-flow-icon icon-edit" aria-hidden="true"></span><h3>统一剪辑</h3><p>把全部内容连接为完整视频。</p></article></div>
+          <div class="v3-case-bar"><span>AI 先处理</span><i>×</i><span>人脑持续检查与优化</span><i>→</i><strong>保证内容、品牌和场景准确</strong></div>
+        </section>
+
+        <section class="slide content-slide v3-storyboard-slide" data-title="分镜检查" aria-labelledby="storyboard-check-title">
+          <div class="big-label" id="storyboard-check-title">生成视频前，先检查<span class="title-accent">58 张分镜</span></div>
+          <div class="storyboard-wall"><span>01</span><span>06</span><span>11</span><span>16</span><span>21</span><span>26</span><span>31</span><span>36</span><span>41</span><span>46</span><span>52</span><span>58</span></div><div class="check-list"><h3>需要人脑校验</h3><p><b>内容</b>是否准确表达脚本？</p><p><b>品牌</b>是否符合品牌调性？</p><p><b>场景</b>是否符合发布会环境？</p><p><b>处理</b>不满意的画面先重新生成。</p></div><p class="slide-takeaway">58 张分镜画面全部确认以后，才真正开始生成视频。</p>
+        </section>
+
+        <section class="slide content-slide v3-video-prompt" data-title="视频 Prompt" aria-labelledby="video-prompt-title">
+          <div class="big-label" id="video-prompt-title">视频 Prompt 更关注<span class="title-accent">时间与镜头</span></div><div class="v3-video-core"><div class="v3-cinema-scene" aria-hidden="true"><i class="cinema-curtain-left"></i><i class="cinema-curtain-right"></i><i class="cinema-light"></i><i class="cinema-beam"></i><i class="cinema-subject"></i><i class="cinema-camera"></i><i class="cinema-lens"></i><i class="cinema-screen"></i><i class="cinema-floor"></i><i class="cinema-foreground"></i></div><strong>VIDEO<br />PROMPT</strong></div><div class="v3-prompt-focus"><article><b>主体</b><p>人物怎么动？运动方向是什么？</p></article><article><b>光影</b><p>画面前后如何变化？</p></article><article><b>镜头调度</b><p>镜头怎么动、怎么转场、景别怎么变？</p></article></div><p class="slide-takeaway">AI 结合脚本、分镜画面与基础设定，为每个镜头生成对应的视频 Prompt。</p>
+        </section>
+
+        <section class="slide v3-connect-slide" data-title="连接视频流程" aria-labelledby="connect-title">
+          <div class="big-label" id="connect-title">AI 把碎片化流程<span class="title-accent">连接起来</span></div><p class="fragment-note fragment-note-left">完整信息先统一：脚本、人物、场景、品牌调性与视觉方向。</p><p class="fragment-note fragment-note-right">后续内容基于已有信息，有目的地继续产出。</p><div class="fragment-layout"><svg class="fragment-lines" viewBox="0 0 1440 510"><path></path><path></path><path></path><path></path><path></path><path></path><path></path><path></path></svg><div class="fragment-cloud"><span>脚本</span><span>分镜</span><span>人物设定</span><span>场景设定</span><span>画面</span><span>视频</span><span>配乐</span><span>剪辑</span></div><div class="fragment-hub">AI<br />统筹</div></div><p class="fragment-outcomes"><span>已有信息统一 → 有目的地产出 → 持续人工优化 → 完整视频</span><em>更加统一 · 更加协调 · 效率更高 · 更贴近业务目标</em></p>
+        </section>
+
+        <section class="slide section-slide" data-title="AI 落地变革" aria-labelledby="chapter-four-title">
+          <div class="chapter-dot-art arrow-dot-art" aria-hidden="true"></div><div class="section-no">04</div><h2 class="section-word" id="chapter-four-title"><span class="title-accent">AI 落地变革</span></h2><p class="v3-section-sub">AI 动效提效与协作</p>
+        </section>
+
+        <section class="slide content-slide v3-motion-change" data-title="AI 动效创作" aria-labelledby="motion-change-title">
+          <div class="big-label" id="motion-change-title">AI 前后，<span class="title-accent">动效创作与认知</span>都在变化</div>
+          <div class="v3-motion-compare"><article><span class="v3-motion-icon motion-ae" aria-hidden="true">AE</span><small>效果创作 · 以前</small><h3>AE 手工抠帧</h3><p>效果依赖工具熟练度、动效知识和个人经验。</p></article><i>→</i><article class="accent-panel"><span class="v3-motion-icon motion-search" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M22 18V10M32 18V8M42 18V10M22 46v8M32 46v10M42 46v8M18 22h-8M18 32H8M18 42h-8M46 22h8M46 32h10M46 42h8"/><rect x="18" y="18" width="28" height="28" rx="8"/><path class="ai-spark" d="M32 23l2.8 6.2L41 32l-6.2 2.8L32 41l-2.8-6.2L23 32l6.2-2.8z"/></svg></span><small>效果创作 · 现在</small><h3>先定义效果与问题</h3><p>AI 帮助寻找实现方式，并辅助生成和调整。</p></article><article><span class="v3-motion-icon motion-three-dots" aria-hidden="true"><b></b><b></b><b></b></span><small>知识范围 · 以前</small><h3>设计师个人认知</h3><p>能力边界取决于自己接触过什么、记得什么。</p></article><i>→</i><article class="v3-network-panel"><span class="v3-motion-icon motion-dot-cloud" aria-hidden="true"></span><small>知识范围 · 现在</small><h3>AI 网络动效知识库</h3><p>连接更广的案例、技术方案和交付经验。</p></article></div>
+        </section>
+
+        <section class="slide content-slide v3-lottie-slide" data-title="Lottie 制作变革" aria-labelledby="lottie-title">
+          <div class="big-label" id="lottie-title"><span class="title-accent">Lottie</span> 的制作变革</div><figure class="v3-reference-card v3-figma-card"><img src="./assets/user/figma-motion-reference.png" alt="Figma Motion 视觉参考" /></figure><div class="v3-lottie-copy"><h3>适合产品矢量动效</h3><p>按钮、图标、状态动画等。</p><h3>以前</h3><p>导出设计图层，在 AE 中重新制作，再通过插件导出。</p><h3>现在</h3><p>Figma Motion AI 直接基于设计稿制作、调整并导出 Lottie，让设计稿、动效与交付尽量在同一个平台完成。</p></div><div class="delivery-process"><span>Figma 设计稿</span><i>→</i><span>Motion AI</span><i>→</i><span>制作与调整</span><i>→</i><strong>导出 Lottie</strong></div>
+        </section>
+
+        <section class="slide content-slide v3-sprite-slide" data-title="精灵图承接 AI 落地" aria-labelledby="sprite-title">
+          <div class="big-label" id="sprite-title"><span class="title-accent">精灵图</span>：承接 AI 动效落地</div><div class="v3-sprite-copy"><h3>为什么需要精灵图</h3><p>Lottie 对部分渐变、遮罩、复杂效果和低端机型兼容存在限制；复杂营销动画需要另一种交付方式。</p><h3>过去的流程</h3><p>AI 视频 / MP4 → AE 剪辑 → 抠图 → PNG 序列 → 精灵图合成 → 压缩 → 调试。</p></div><a class="v3-sprite-link" href="https://conconconcong.github.io/spriteee/" target="_blank" rel="noreferrer"><div class="v3-sprite-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>一键导出精灵图工具</h3><p>导入 AI 视频，在网页里完成简单剪辑、尺寸调整、帧率调整、精灵图生成、压缩和导出。</p><span>打开工具 ↗</span></a><p class="slide-takeaway">把重复操作集中到一个网页工具里，明显提升实际动效交付效率。</p>
+        </section>
+
+        <section class="slide content-slide v3-rules-slide" data-title="动效规则库" aria-labelledby="motion-rules-title">
+          <div class="big-label" id="motion-rules-title">把踩过的坑变成<span class="title-accent">动效规则库</span></div><a class="v3-reference-card v3-rules-card" href="https://conconconcong.github.io/motion-rules-library/library.html" target="_blank" rel="noreferrer"><img src="./assets/user/motion-rules-library.png" alt="动效规则库界面" /><span>打开动效规则库 ↗</span></a><div class="v3-rules-copy"><article><h3>规则从哪里来</h3><p>个人经验、历史项目和聊天记录中反复出现的问题。</p></article><article><h3>沉淀什么内容</h3><p>精灵图尺寸限制、帧率问题、Lottie 渐变 Bug、低端机型兼容，以及性能和交付问题。</p></article></div><p class="slide-takeaway">让 AI 帮助查询，把个人经验变成团队可以复用的知识。</p>
+        </section>
+
+        <section class="slide content-slide v3-web-skill" data-title="网页动效 Skill" aria-labelledby="web-motion-title">
+          <div class="big-label" id="web-motion-title">把视觉语言整理成<span class="title-accent">网页动效 Skill</span></div><div class="v3-web-skill-card"><div class="v3-browser-stack"><div class="v3-browser-window browser-main"><header><i></i><i></i><i></i><span>motion-skill.dev</span></header><div class="browser-canvas"><b>VISUAL</b><em></em><em></em><strong>RUNNING<br />EXPERIENCE</strong></div></div><div class="v3-browser-window browser-mini"><header><i></i><i></i><i></i></header><div class="browser-mini-grid"><span></span><span></span><span></span><span></span></div></div></div><div><small>WEB MOTION SKILL</small><h3>从描述效果到直接体验效果</h3><p>我把喜欢的视觉语言、动效方式和交互经验整理成一套 Skill。它适合宠物、活动和营销类项目，可以快速生成能够直接运行、继续调整的网页动效。</p><div class="v3-web-term-note"><b>网页动效需要知道专业名词</b><em>把视觉感受转成准确的运动、时间、缓动和交互描述。</em></div><div class="v3-web-link-row"><a class="v3-web-primary-link" href="https://github.com/conconconcong/content-to-motion-web" target="_blank" rel="noreferrer">查看 Skill ↗</a><a class="v3-motion-library-link" href="https://examples.motion.dev/" target="_blank" rel="noreferrer">浏览 Motion 动效库 ↗</a></div></div></div><p class="slide-takeaway">这份分享中的网页动效也来自这套 Skill，欢迎大家直接尝试。</p>
+        </section>
+
+        <section class="slide content-slide summary-slide v3-summary" data-title="总结" aria-labelledby="summary-title">
+          <div class="big-label" id="summary-title">AI 释放的，不只是<span class="title-accent">执行效率</span></div><div class="v3-summary-marquee"><div class="v3-marquee-row"><div class="v3-marquee-group"><span>找资料</span><span>整理信息</span><span>生图</span><span>视频生成</span><span>动效制作</span><span>交付</span><span>规则查询</span></div><div class="v3-marquee-group" aria-hidden="true"><span>找资料</span><span>整理信息</span><span>生图</span><span>视频生成</span><span>动效制作</span><span>交付</span><span>规则查询</span></div></div></div><div class="v3-summary-bar"><del>不只是以后可以做更多图</del><strong>而是把时间放回前期创意、业务理解、用户体验和产品表达</strong></div><div class="v3-summary-copy"><p>自己的工作内核，也从单纯完成视觉，慢慢向更完整的体验设计延伸。</p><p>当设计、产品和技术共享更多工作流、工具与规则，协作也会更高效、更有意思。</p></div>
+        </section>
+
+        <section class="slide final-slide v3-final" data-title="未来展望" aria-labelledby="final-title">
+          <div class="final-layout"><p class="final-ghost" aria-hidden="true">THANKS</p><div class="v3-final-symbol" aria-hidden="true"><i class="symbol-disc"></i><i class="symbol-cut"></i><i class="symbol-moon"></i><i class="symbol-dot d1"></i><i class="symbol-dot d2"></i><i class="symbol-dot d3"></i><i class="symbol-dot d4"></i><i class="symbol-dot d5"></i><i class="symbol-dot d6"></i></div><h2 class="final-main" id="final-title"><span class="final-row"><em>期待AI</em><strong>在我们之后的工作中，</strong></span><span class="final-row final-row-after"><em>带来更多</em><strong>新的发展和变革</strong></span></h2><div class="final-footer"><div class="final-path"><span>期待</span><i>→</i><span>AI</span><i>→</i><span>发展</span><i>→</i><span>变革</span></div><p class="final-statement">期待AI在我们之后的工作中，带来更多新的发展和变革</p></div></div>
+        </section>
+
+        <div id="transition-curtain" aria-hidden="true"></div>
+      </div>
+    </main>
+    <div id="mobile-orientation" role="status" aria-live="polite"><span class="phone-turn" aria-hidden="true"><i></i></span><strong>请横屏查看</strong><small>旋转手机后，左右滑动即可翻页</small></div>
+    <div id="mobile-toolbar" aria-label="手机演示工具"><span>左右滑动翻页</span><button id="mobile-fullscreen" type="button">全屏查看</button></div>
+    <div id="controls" aria-label="演示控制"><button id="prev" type="button" aria-label="上一页">←</button><span id="counter" aria-live="polite">01 / 36</span><button id="next" type="button" aria-label="下一页">→</button></div>
+    <div id="editor-controls" aria-label="页面编辑控制"><button id="edit-toggle" type="button" aria-pressed="false">编辑文字</button><button id="edit-save" type="button">保存</button><button id="edit-export" type="button">导出文案</button><button id="edit-reset" type="button">恢复默认</button><span id="edit-status" aria-live="polite"></span></div>
+    <div id="help">← / → 翻页 · SPACE 下一页 · 海报页支持拖拽 / 滚轮 / ↑↓</div><div id="progress" aria-hidden="true"></div><div id="cursor-dot" aria-hidden="true"></div><div id="cursor-ring" aria-hidden="true"></div>
+    <noscript><style>.slide{display:none!important}.slide:first-child{display:block!important;opacity:1!important;visibility:visible!important;transform:none!important}</style></noscript>
+  <script src="./edited-copy.js?v=20260901-7"></script>
+  <script src="./script.js?v=20260901-24"></script>
+  </body>
+</html>
