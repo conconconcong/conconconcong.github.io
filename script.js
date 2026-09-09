@@ -387,7 +387,7 @@
     });
   }
 
-  const EDIT_STORAGE_KEY = "ai-visual-sharing-refined-v3";
+  const EDIT_STORAGE_KEY = "ai-visual-sharing-refined-v3-20260909";
   const editToggle = document.querySelector("#edit-toggle");
   const editSave = document.querySelector("#edit-save");
   const editExport = document.querySelector("#edit-export");
@@ -569,13 +569,27 @@
   function updateReadout() {
     const now = String(currentSlide + 1).padStart(2, "0");
     const total = String(slides.length).padStart(2, "0");
-    counter.textContent = `${now} / ${total}`;
+    counter.value = `${now} / ${total}`;
     progress.style.transform = `scaleX(${(currentSlide + 1) / slides.length})`;
     const title = slides[currentSlide]?.dataset.title || "分享";
     document.title = `${title}｜AI 如何变革视觉表达与产品体验`;
     if (speakerCurrent) speakerCurrent.textContent = title;
     if (speakerNext) speakerNext.textContent = slides[(currentSlide + 1) % slides.length]?.dataset.title || "结束";
   }
+
+  /* Page-jump input in the bottom-right counter: type a page number, press Enter to jump. */
+  counter.addEventListener("focus", () => counter.select());
+  counter.addEventListener("blur", () => updateReadout());
+  counter.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") { event.preventDefault(); counter.blur(); return; }
+    if (event.key !== "Enter") return;
+    event.preventDefault();
+    const page = parseInt(counter.value, 10);
+    if (Number.isNaN(page)) { counter.blur(); return; }
+    const target = Math.min(slides.length, Math.max(1, page));
+    showSlide(target - 1, target > currentSlide + 1 ? 1 : -1);
+    counter.blur();
+  });
 
   function splitTitleText(element) {
     const label = element.textContent.replace(/\s+/g, " ").trim();

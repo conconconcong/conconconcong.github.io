@@ -2627,6 +2627,19 @@ body.edit-mode .v3-micro-float { animation:none !important; translate:none; rota
   .cover-play-card .fake-play::after { animation:none !important; }
 }
 
+/* Unify the agenda index typography: all four items share one size and width. */
+.v3-agenda .i3,
+.v3-agenda .i4 { width:470px; }
+.v3-agenda .i3 span,
+.v3-agenda .i4 span {
+  max-width:none;
+  font-size:54px;
+  line-height:1;
+  white-space:nowrap;
+}
+.v3-agenda .i3 small,
+.v3-agenda .i4 small { max-width:none; }
+
 /* Round 31 · page 09: replace the seasonal poster with a reference-image grammar. */
 .v3-reference-glyph {
   right:92px;
@@ -3061,3 +3074,15 @@ body.pdf-export #mobile-toolbar { display:none !important; }
   .cover-play-card .fake-play,
   .cover-play-card .fake-play::after { animation:none !important; }
 }
+
+/* ===== 长文案统一左对齐（2026-09-09） ===== */
+.v3-workflow-slide .v3-workflow-top { text-align: left; }
+.v3-workflow-slide .slide-takeaway { text-align: left; }
+.v3-decision-line { text-align: left; }
+.v3-problem-bar { text-align: left; }
+.v3-brand-note { text-align: left; }
+
+/* Editable page counter: type a page number, press Enter to jump. */
+#counter { pointer-events: auto; width: 92px; padding: 3px 8px; border: 0; border-radius: 7px; background: transparent; font-family: inherit; font-size: inherit; font-weight: inherit; letter-spacing: inherit; font-variant-numeric: inherit; text-align: right; color: rgba(255,255,255,.38); outline: none; cursor: text; transition: color .2s ease, background .2s ease, box-shadow .2s ease; }
+#counter:hover { color: rgba(255,255,255,.78); background: rgba(255,255,255,.06); }
+#counter:focus { color: #fff; background: rgba(130,146,255,.16); box-shadow: 0 0 0 1px var(--blue); }

@@ -385,7 +385,7 @@
 /* Controls */
 #speaker-controls { display: none !important; }
 #controls { left: auto; right: 28px; transform: none; }
-#editor-controls { left: 28px; }
+#editor-controls { left: 28px; right: auto; }
 #help { left: 50%; transform: translateX(-50%); }
 
 @media (prefers-reduced-motion: reduce) {

@@ -21,7 +21,6 @@
     box-shadow: none;
   }
 
-  #editor-controls,
   #speaker-controls,
   #help,
   #cursor-dot,
@@ -68,11 +67,11 @@
     right: max(12px, env(safe-area-inset-right)) !important;
     bottom: max(10px, env(safe-area-inset-bottom)) !important;
     gap: 8px;
-    padding: 6px;
+    padding: 0;
     border: 0;
     transform: none !important;
-    background: rgba(20,21,26,.86);
-    backdrop-filter: blur(14px);
+    background: transparent;
+    backdrop-filter: none;
   }
 
   #controls button {
@@ -84,10 +83,11 @@
   }
 
   #counter {
-    min-width: 72px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 850;
+    min-width: 0;
+    color: rgba(255,255,255,.55);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1em;
   }
 
   #progress {
@@ -170,5 +170,12 @@
   .phone-turn i {
     animation: none;
     transform: rotate(90deg);
+  }
+}
+
+/* 窄屏下仍隐藏编辑工具条；触屏但屏幕够宽（平板横屏、触屏电脑）时保留编辑入口 */
+@media (max-width: 1100px) {
+  #editor-controls {
+    display: none !important;
   }
 }
