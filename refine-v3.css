@@ -3089,3 +3089,19 @@ body.pdf-export #mobile-toolbar { display:none !important; }
 
 /* Hide the in-page copy editor toolbar (top-left). */
 #editor-controls { display: none !important; }
+
+/* Page 10: hide the left VISUAL SKILL card, enlarge the reference-prompt code module. */
+.v3-visual-skill .v3-skill-shot { display: none !important; }
+.v3-visual-skill .v3-skill-copy {
+  left: 110px;
+  right: 90px;
+  top: 200px;
+  bottom: auto;
+  width: auto;
+  padding: 48px 60px;
+  border-radius: 28px;
+  background: #17181d;
+  font-size: 24px;
+  line-height: 1.7;
+}
+.v3-visual-skill .v3-code-copy { top: auto; right: 150px; bottom: 34px; min-width: 128px; height: 44px; font-size: 15px; }

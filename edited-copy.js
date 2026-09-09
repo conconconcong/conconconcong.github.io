@@ -77,7 +77,7 @@ window.__DEFAULT_EDIT_COPY__ = {
   "copy-076": "哪些元素是我真正想要的？",
   "copy-077": "哪些只是参考图本身的内容？",
   "copy-078": "视觉拆解 <i>→</i> 重新组织 <i>→</i> 更可控的结果",
-  "copy-079": "万能视觉 <span class=\"title-accent\">Skill</span>",
+  "copy-079": "万能参考图<span class=\"title-accent\">prompt</span>",
   "copy-080": "VISUAL SKILL",
   "copy-081": "",
   "copy-082": "打开链接 ↗",
