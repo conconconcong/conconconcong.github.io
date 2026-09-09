@@ -3086,3 +3086,6 @@ body.pdf-export #mobile-toolbar { display:none !important; }
 #counter { pointer-events: auto; width: 92px; padding: 3px 8px; border: 0; border-radius: 7px; background: transparent; font-family: inherit; font-size: inherit; font-weight: inherit; letter-spacing: inherit; font-variant-numeric: inherit; text-align: right; color: rgba(255,255,255,.38); outline: none; cursor: text; transition: color .2s ease, background .2s ease, box-shadow .2s ease; }
 #counter:hover { color: rgba(255,255,255,.78); background: rgba(255,255,255,.06); }
 #counter:focus { color: #fff; background: rgba(130,146,255,.16); box-shadow: 0 0 0 1px var(--blue); }
+
+/* Hide the in-page copy editor toolbar (top-left). */
+#editor-controls { display: none !important; }
